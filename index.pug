@@ -4,13 +4,17 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title Wise-Saying Player
     link(rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css")
+    link(rel="stylesheet" href="https://pyscript.net/latest/pyscript.css")
+    script(defer src="https://pyscript.net/latest/pyscript.js")
   body 
     header 
       h1 Wise-Saying Player
     main 
       h2 Play
       button#play Play
+    py-script(src="/python/index.py")
     script(src="https://code.responsivevoice.org/responsivevoice.js?key=elGIFroE")
+    script(src="/js/data.js") 
     script(src="/js/index.js")
